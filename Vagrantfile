@@ -1,11 +1,5 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
-#
-# This is a simple PHP jenkins box project assocaited with all PHP projects avaialble inside of SaleCents
-# Its assumed that you have included the phpvagrant.box file:
-#
-#     vagrant box add phpvagrantbox phpvagrant.box
-#
 
 def set_hostname(server)
   server.vm.provision 'shell', inline: "hostname #{server.vm.hostname}"
